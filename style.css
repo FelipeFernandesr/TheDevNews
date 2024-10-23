@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: "Montserrat";
+    width: 100%;
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
+}
+
+.background-green{
+    background-color: #02A28F;
+}
+
+#title-page{
+    display: flex;
+    color: #ffffff;
+    padding-left: 9.75rem;
+    height: 4.375rem;
+    line-height: 4.375rem;
+}
+
+h1{
+    font-size: 2.25rem;
+}
+
+#dev {
+    width: 100%;
+    max-width: 100%;
+    height: 26rem; /* Defina a altura para garantir que a div tenha tamanho visível */
+    /*margin-left: -20px;*/
+}
+
+#img {
+    width: 100%; /* Faz com que a div ocupe toda a largura do #dev */
+    height: 396px; /* Faz com que a altura também ocupe o espaço do #dev */
+    background-image: url('assets/dev.png'); /* Caminho da imagem */
+     /*Muda o tamanho da imagem que estava errado*/
+    background-size: cover; /* Faz com que a imagem ocupe toda a div */
+    background-position: center; /* Centraliza a imagem dentro da div */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+}
+
+#img > p,#img > h2 {
+    color:#ffffff;
+    margin-left:1.5rem;
+    font-size: 2rem;
+}
+
+#img > p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#img > #name{
+    font-weight: 500;
+}
+
+h2{
+    margin: 0 0 0 6%;
+    color: #ffffff;
+    
+}
+
+#post-title > a{
+    text-align: right;
+    margin: 0 1.5rem;
+    color: #ffffff;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1%;
+    margin: 3.125rem auto 4.0625rem;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.grid-container-post{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 0.6875rem;
+    width: 100%;
+}
+
+.grid-container-populares{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0.6875rem;
+    height: 6rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+}
+
+.grid-container-populares > div{
+    width: 100%;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80%;
+    margin-left: 7px;
+}
+
+.grid-container-populares > div > h3{
+    font-size: 75%;
+    margin-left: -20px;
+    font-weight: 900;
+}
+
+.grid-container-populares > div > p{
+    font-size: 65%;
+    margin-left: -20px;
+}
+
+.grid-container-populares > div > p,
+.grid-container-populares > div > h3{
+    margin-left: 0;
+    
+}
+
+.grid-container-populares > img{
+    margin-left: 4%;
+    width: 132px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+aside > div {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    
+}
+
+#categorias{
+    margin: 1.5rem 0 0.875rem 0;
+}
+
+#post-title{
+    height: 3.5rem;
+    line-height: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.post > div{
+    width: 100%;
+    height: 12.8125rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+}
+
+.post > div > h4{
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    color: #02A28F;
+    margin: 1rem 1rem 0.5rem;
+}
+
+.post > div > h3{
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: 800;
+    color: #070707;
+    margin: 1rem 1rem 0.5rem;
+}
+
+.post > div > p.name{
+    font-size: .875rem;
+    line-height: .875rem;
+    color: #070707;
+    margin: 0 1rem 0;
+}
+.post > div > p{
+    font-size: .875rem;
+    line-height: .875rem;
+    color: #070707;
+    margin: 1rem 1rem 0.5rem;
+}
+
+
+#categorias > div{
+    width: 22.5rem;
+    height: 1.25rem;
+    margin: 0.875rem 0;
+}
+
+#links{
+    display: grid;
+    gap: 10px;
+    height: max-content;
+}
+
+#links > .link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px  0;
+}
+
+#links > .link > a{
+    text-decoration: none;
+    color: #616161;
+    font-size: 1rem;
+    
+}
+
+#links > .link > p{
+    text-decoration: none;
+    color: #616161;
+    font-size: 1rem;
+}
+
+#categorias > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+footer{
+    width: 100%;
+    height: 3rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 3em;
+    font-size: 0.875rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #title-page{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    #img {
+        width: 100%; /* Faz com que a div ocupe toda a largura do #dev */
+         /* Faz com que a altura também ocupe o espaço do #dev */
+        background-image: url('assets/dev.png'); /* Caminho da imagem */
+        background-size: cover; /* Faz com que a imagem ocupe toda a div */
+        background-position: center; /* Centraliza a imagem dentro da div */
+        background-repeat: no-repeat; /* Impede que a imagem se repita */
+        object-fit: cover;
+    }
+
+    #img > p,#img > h2 {
+        font-size: 1.5rem;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 96%;
+        margin: 1.5rem auto;
+    }
+
+    .grid-container-post{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 0.6875rem;
+        width: 100%;
+    }
+
+    .grid-container-post > .post > img{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        object-fit: cover;
+        
+    }
+
+    .grid-container-populares{
+        height: 7rem;
+    }
+
+    .grid-container-populares > div{
+        height: 100%;
+        padding-left: 20px;
+    }
+
+    .grid-container-populares > div > h3{
+        margin-top: 20px;
+        
+    }
+
+    .grid-container-populares > img{
+        height: 70%;
+        width: auto;
+    }
+
+    .post > div{
+        width: 100%;
+        height: 12.6rem;
+        border-radius: 1rem;
+        box-shadow: 0px 10px 20px 0px #0000001A;
+    }
+
+    aside{
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+
+}
