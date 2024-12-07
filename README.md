@@ -3,7 +3,7 @@
 ### 📜 Sobre o Projeto  
 Este projeto é uma página de notícias, desenvolvido com o objetivo de aprimorar meus conhecimentos em **HTML** e **CSS** e **Responsividade**. Ele representa um marco no meu aprendizado de desenvolvimento front-end, focando em boas práticas de codificação e atenção aos detalhes visuais.
 
-Neste projeto, busquei por em pratica o desenvolvimento responsivo com a utilização de grid css, para criar uma experiência fluida para diferentes tipos de dispositivos e tamanhos de tela.
+Neste projeto, busquei pôr em prática o desenvolvimento responsivo com a utilização de Grid CSS, para criar uma experiência fluida para diferentes tipos de dispositivos e tamanhos de tela.
 
 <p align="center">
      <a href="https://rid185953.netlify.app">📱 Visite a página</a>
