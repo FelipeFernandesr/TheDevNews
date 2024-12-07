@@ -46,7 +46,7 @@ Neste projeto, busquei pôr em prática o desenvolvimento responsivo com a utili
 ### 📂 Como Executar Localmente  
 1. Clone o repositório:  
    ```bash
-   git clone https://github.com/seu-usuario/RID185953_Desafio02.git
+   git clone https://github.com/FelipeFernandesr/TheDevNews.git
 
 ---
 
